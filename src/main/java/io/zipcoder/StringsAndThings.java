@@ -63,8 +63,7 @@ public class StringsAndThings {
             if (isWord.charAt(i) == '/') {
                 isWordCount++;
             }
-        }
-            for (int i = 0; i < notWord.length(); i++){
+        } for (int i = 0; i < notWord.length(); i++){
                 if(notWord.charAt(i) == '/'){
                     notWordCount++;
                 }
@@ -86,11 +85,9 @@ public class StringsAndThings {
         for (int i = 1; i < input.length() - 1; i++) {
             if (input.charAt(i) == 'g' && input.charAt(i + 1) == 'g' || input.charAt(i - 1) == 'g') {
                 count++;
-            } else {
-                if (input.charAt(i) == 'g') count = 0;
             }
-        } return count != 0; //Still working on trying to resolve these problems [3,4]
-    }
+        } return count != 0;
+        }
 
 
     /**
